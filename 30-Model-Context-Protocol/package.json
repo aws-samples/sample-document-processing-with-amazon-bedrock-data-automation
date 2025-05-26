@@ -1,0 +1,32 @@
+{
+  "name": "aws-bedrock-data-automation-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "mcp-server-aws-bedrock-data-automation": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-data-automation": "^3.782.0",
+    "@aws-sdk/client-bedrock-data-automation-runtime": "^3.782.0",
+    "@aws-sdk/client-s3": "^3.782.0",
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.8.3"
+  }
+}
