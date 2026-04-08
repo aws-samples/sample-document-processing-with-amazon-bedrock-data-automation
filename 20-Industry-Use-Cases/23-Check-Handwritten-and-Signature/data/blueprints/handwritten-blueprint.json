@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "This is a bank check, used to pay money to people or business",
+  "class": "Bank-checks",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "date": {
+      "type": "string",
+      "inferenceType": "inferred",
+      "instruction": "The date the check has been signed. Reformat to YYYY-MM-DD"
+    },
+    "amount_in_words": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "The amount in words, as written. Make sure to add cents at the end. Example: One Hundred Dollars and - 55 cents"
+    },
+    "dollar_amount": {
+      "type": "number",
+      "inferenceType": "explicit",
+      "instruction": "The dollar amount in numbers, as written"
+    },
+    "payee_name": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "To whom the check is addressed"
+    },
+    "memo": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "The memo that describe what the check was for"
+    }
+  }
+}

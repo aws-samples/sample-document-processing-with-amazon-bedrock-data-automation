@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "This is a bank check, used to pay money to people or business",
+  "class": "Bank-checks",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "check_number": {
+      "type": "number",
+      "inferenceType": "explicit",
+      "instruction": "This is the check number in the checkbook. It is typically the last of the block of MICR numbers"
+    },
+    "bank_routing_number": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "The routing number is typically the first of the MICR numbers."
+    },
+    "date": {
+      "type": "string",
+      "inferenceType": "inferred",
+      "instruction": "The date the check has been signed. Reformat to YYYY-MM-DD"
+    },
+    "amount_in_words": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "The amount in words, as written."
+    },
+    "dollar_amount": {
+      "type": "number",
+      "inferenceType": "explicit",
+      "instruction": "The dollar amount in numbers, as written"
+    },
+    "payee_name": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "To whom the check is addressed"
+    },
+    "account_holder_name": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "The account holder's name and display on the first and last name."
+    },
+    "memo": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "The memo that describe what the check was for"
+    },
+    "bank_name": {
+      "type": "string",
+      "inferenceType": "explicit",
+      "instruction": "The bank name"
+    },
+    "is_signed": {
+      "type": "boolean",
+      "inferenceType": "inferred",
+      "instruction": "Whether the check is signed"
+    },
+    "routing_number_valid": {
+      "type": "boolean",
+      "inferenceType": "explicit",
+      "instruction": "True if the bank routing number has 9 digits"
+    }
+  }
+}
