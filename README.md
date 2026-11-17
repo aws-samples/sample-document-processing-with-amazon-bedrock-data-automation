@@ -18,6 +18,7 @@ This workshop contains the following sections
   * [Getting Started - How Bedrock Data Automation works](10-Understanding-BDA/11_getting_started_with_bda.ipynb)
   * [Document Insights with Standard Outputs](10-Understanding-BDA/12_standard_output_extended.ipynb)
   * [Custom Document Insights with Blueprints](10-Understanding-BDA/13_custom_outputs_and_blueprints.ipynb)
+  * [Synchronous Document Processing with Standard Output](10-Understanding-BDA/14_standard_output_sync_invoke.ipynb)
 * **2 - Industry Use Cases - Document Processing**
   * [Mortgage and Lending Flow](20-Industry-Use-Cases/21-Mortgage-and-Lending/21_mortgage_and_lending.ipynb)
   * [Medical Claims Processing with Agents](20-Industry-Use-Cases/22-Medical-Claims-Processing/22_medical_claims_processing.ipynb)
